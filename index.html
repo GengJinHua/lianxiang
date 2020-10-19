@@ -28,20 +28,10 @@
      </div>
      <div class="header-A">
          <img src="img/70.png" alt=""  style="padding-right:100px" >
-         <a href="file:///C:/Users/21903/Desktop/sassproduct/login.html" target="_self" style="color:black"><span style="vertical-align: top; ">登录</span><span style="vertical-align: top;">|</span></a>
-        <a href="file:///C:/Users/21903/Desktop/sassproduct/register.html?" target="_blank" style="color:black"><span style="vertical-align: top;padding-right:20px">注册</span></a>
+         <a href="#"style="color:black"><span style="vertical-align: top; " id="dl">登录</span><span style="vertical-align: top;">|</span></a>
+        <a href="#" style="color:black"><span style="vertical-align: top;padding-right:20px" id="zc">注册</span></a>
          <img src="img/72.png" alt="" style="padding-right: 60px">
      </div>
-     <div class="headerCon-nav"style="display:none">
-         <div class="headerCon-nav-A" >
-           <div><a href="#"><span>Lenovo电脑</span></a></div>  
-             <div><a href="#"><span>ThinkPad电脑</span></a></div>
-             <div><a href="#"><span>手机/通信</span></a></div>
-             <div><a href="#"><span>智能产品</span></a></div>
-             <div> <a href="#"><span>平板电脑</span></a></div>
-             <div><a href="#"><span>配件/办公</span></a></div>
-             <div><a href="#"><span>增值服务</span></a></div>
-         <div class="headerCon-nav-B">
          </div> 
         </div>
     </div>
@@ -49,7 +39,7 @@
 
     <!-- banner -->
     <div class="banner">
-        <div class="swiper-contione">
+        <div class="swiper-contione" style="margin:0 auto;">
 			<div class="swiper">
 				<div class="swiper-item">
 					<img src="./img/1.jpg">
@@ -113,12 +103,12 @@
       </div>
       <div class="section-A">
          <a href="https://activity.lenovo.com.cn/xiaofei/tsj/2020rennew.index.html?_ga=2.150064880.776358327.1600044491-740456957.1596013954" ><img src="img/33.png" alt="" ><span style="margin-left:-10px;">Lenovo台式机</span></a>
-         <a href="file:///C:/Users/21903/Desktop/sassproduct/particulars.html"><img src="img/34.png" alt=""><span style="margin-left:-10px;">Lenovo笔记本</span></a>
-         <a href="https://thinkpad.lenovo.com.cn/index.html?_ga=2.155831677.776358327.1600044491-740456957.1596013954"><img src="img/35.png" alt=""><span style="margin-left:-10px;">ThinkPad电脑</span></a>
-         <a href="https://shop.lenovo.com.cn/xj/index.html?_ga=2.155831677.776358327.1600044491-740456957.1596013954"><img src="img/36.png" alt=""><span style="margin-left:-10px;">选件/服务</span></a>
-         <a href="https://shop.lenovo.com.cn/lecoo.html?ss=0.2171571784732318&frompage=home&_ga=2.189400813.776358327.1600044491-740456957.1596013954"><img src="img/37.png" alt=""><span style="margin-left:0px;">智能产品</span></a>
-         <a href="https://shop.lenovo.com.cn/pad.html?frompage=home&_ga=2.189400813.776358327.1600044491-740456957.1596013954"><img src="img/38.png" alt=""><span style="margin-left:-5px;">网课平板</span></a>
-         <a href="https://shop.lenovo.com.cn/mobile/index.html?_ga=2.189400813.776358327.1600044491-740456957.1596013954"><img src="img/39.png" alt=""><span style="margin-left:12px;">手机</span></a>
+         <a href="#"><img src="img/34.png" alt=""><span style="margin-left:-10px;">Lenovo笔记本</span></a>
+         <a href="#"><img src="img/35.png" alt=""><span style="margin-left:-10px;">ThinkPad电脑</span></a>
+         <a href="#"><img src="img/36.png" alt=""><span style="margin-left:-10px;">选件/服务</span></a>
+         <a href="#"><img src="img/37.png" alt=""><span style="margin-left:0px;">智能产品</span></a>
+         <a href="#"><img src="img/38.png" alt=""><span style="margin-left:-5px;">网课平板</span></a>
+         <a href="#"><img src="img/39.png" alt=""><span style="margin-left:12px;">手机</span></a>
       </div>
       <div class="section-B" >
          <div style="overflow: hidden;">
@@ -336,5 +326,15 @@
              </div>
          </div>
     </div>
+    <script src="src/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $('#dl').on('click',()=>{
+            location.href = 'login.html';
+            })
+            
+            $('#zc').on('click',()=>{
+           location.href = 'register.html';
+})
+    </script>
 </body>
 </html>
