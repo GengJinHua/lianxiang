@@ -4,7 +4,7 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,hr,ul,ol,td,input,option,textarea{
 }
 body{
     font-family: "微软雅黑";
-    background-color: #bfc2c3;
+    background-color:#f7f7f7;
 }
 li{
 	list-style: none;
@@ -26,6 +26,23 @@ img{
             font-weight:normal;
             padding:52px 0 39px 0;  
         }
+
+}
+.main-mean input:nth-child(3){
+    color:#8acaf7;
+}
+.main-mean input:nth-child(4){
+    width:20px;
+    height:20px;
+}
+    #Auto{
+        margin:-35px 0 14px 270px;
+        display: block;
+    
+}
+.header input:last-child{
+    background-color:red;
+    text-align:center;
 }
 .header img:first-child{
    width:50px;
@@ -53,6 +70,9 @@ input{
     border-left-style:none; 
  
 }
+
+
+//section
 .section{
     width:357px;
     height:50px;
@@ -60,10 +80,18 @@ input{
     span{
         width:20px;
         color:#a4a3a3;
+        em{
+            line-height: 50px;
+             color:#a4a3a3;
+        }
     }
     img{
         width:35px;
         height:35px;
         margin-right:28px;
     }
+}
+#QQ{
+    margin-left:58px;
+    margin-top: 20px;
 }

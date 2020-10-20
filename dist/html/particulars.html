@@ -58,21 +58,85 @@
 <!-- main -->
         <div class="main" >
         <div class="mainCon-A">
-            
+            <img src="img/113.jpg" alt="">
+            <div>
+                <img src="img/left.png"id="an">
+                <img src="img/113.jpg" id="fim">
+                <img src="img/114.jpg">
+                <img src="img/115.jpg">
+                <img src="img/116.jpg">
+                <img src="img/117.jpg">
+                <img src="img/right.png"id="af">
+                <div class="fs">
+                    <span>商品编号：F0EX007PCD</span>
+                    <img src="img/shoucang.png" style="margin-left: 280px;"><h6>收藏</h6>
+                    <img src="img/fenxiang.png"><h6>分享</h6>
+                </div>
+            </div>
+            <h3>看了又看</h3>
         </div>
         <div class="mainCon-B">
-
+              <h3>AIO 520C-22ADA 21.5英寸一体台式机 黑色</h3>
+              <h5>RYZEN_5_3500U/Windows 10 家庭中文版/21.5英寸/8G/256G SSD/集成显卡/黑色</h5>
+              <div id="mainCon-head">
+                        <div class="mainCon-head">
+                            <span>商城价</span>
+                            <span id="price">￥2999</span>
+                        </div>
+                        <div class="mainCon-right">
+                            <h6>累计评价</h6>
+                            <span>334</span>
+                        </div>
+                    <div class="mainCon-center">
+                        <span>活动</span>
+                        <div> <span>更多活动</span></div>
+                    </div>
+                     <a href="https://activity.lenovo.com.cn/zhuanpan/20200221.index.html" id="xz">大转盘抽12分期免费，戳我-></a>
+                </div>
+            <div class="mainCon-foot">
+                   <div>增值业务</div>
+                   <div>支持</div>
+                   <div id="huan"> <img src="img/huan.png" alt=""> 以旧换新</div>
+                   <div >高价回收，急速到账换新机</div>
+            </div>
+              <span style="margin-left:38px;">购买数量</span> 
+              <div id="buy">
+                  <input type="button" value="立即购买" id="buy-A">
+                  <input type="button" value="加入购物车" id="buy-B">
+                  <br>
+                  <span>使用 <a href="#">联想智选APP</a>下单，享受更多优惠 </span>
+              </div>
         </div>
 </div>
 <!-- article -->
          <div class="article">
              <div class="articleCon-A">
                  <div class="articleCon" style="float:left;">
-                     <a href="https://tk.lenovo.com.cn/product/1007859.html?_ga=2.146474354.776358327.1600044491-740456957.1596013954"><div><img src="img/84.jpg" alt=""></div></a>
-                     <a href="https://item.lenovo.com.cn/product/1009590.html"><div><img src="img/73.jpg" alt=""></div></a>
-                     <a href="https://item.lenovo.com.cn/product/1009684.html"><div><img src="img/75.jpg" alt=""></div></a>
-                     <a href="https://item.lenovo.com.cn/product/1009344.html"> <div><img src="img/76.jpg" alt=""></div></a>
-                     <a href="https://tk.lenovo.com.cn/product/1009239.html?_ga=2.158510716.776358327.1600044491-740456957.1596013954"><div><img src="img/74.jpg" alt=""></div></a>
+                     <a href="#"><div><img src="img/84.jpg" alt="">
+                        <span>联想无线静音鼠标N911...</span>
+                        <h6>静音按键，经久耐用，超300万次点...</h6>
+                        <h5>￥99</h5>
+                  </div></a>
+                     <a href="#"><div><img src="img/73.jpg" alt="">
+                        <span>联想都市简约手提内胆包B11...</span>
+                        <h6>大容量，轻重量，笔记本电脑，鼠...</h6>
+                        <h5>￥49</h5>
+                    </div></a>
+                     <a href="#"><div><img src="img/75.jpg" alt="">
+                        <span>飞利浦(PHILIPS)一转三墙面...</span>
+                        <h6></h6>
+                        <h5>￥9.9</h5> 
+                    </div></a>
+                     <a href="#"> <div><img src="img/76.jpg" alt="">
+                        <span>小新新选 心动系列 蓝牙鼠标...</span>
+                        <h6 style="padding-left:74px;">小新蓝牙鼠标</h6>
+                        <h5>￥59</h5>
+                    </div></a>
+                     <a href="#"><div><img src="img/74.jpg" alt="">
+                        <span>2020款小新 Pro 13 英特尔...</span>
+                        <h6>第十代英特尔酷睿i5 10210U...</h6>
+                        <h5>￥4399</h5>
+                    </div></a>
                  </div> 
                  <!-- <img src="img/86.png" style="margin-top:154px;margin-left:1330px;"> -->
              </div>
@@ -167,6 +231,20 @@
         <span>京公网安备110108007970号</span>|
         <span>营业执照9111010870000458B</span>
     </div>
+
+
+
 </div>
+<script src="src/js/jquery-1.12.4.min.js"></script>
+<script>
+ $('#buy-A').on('click',()=>{
+                location.href = 'login.html';
+            })
+    $('#buy-B').on('click',()=>{
+        location.href = 'carts.html';
+        })
+    
+
+</script>
 </body>
 </html>

@@ -90,6 +90,16 @@ img{
     img{
         width: 30px;
         height:30px;
+        padding-right:100px
+    }
+    a{
+        color:black;
+        span{
+            vertical-align: top;
+        }
+        #zc{
+            padding-right:20px;
+        }
     }
 }
  
@@ -233,6 +243,9 @@ img{
     justify-content: space-between; 
     a{
         margin-left: 80px;
+        span{
+            margin-left:-10px;
+        }
     }  
 }      
 .section-A span{
@@ -254,10 +267,12 @@ img{
          float:right;
          padding-top:80px;
          background-color:#eeeeee ; 
+         overflow: hidden;
      img{
        width:146px;
        height:220px;
        border:none; 
+       margin-left:-65px;
      }
  } 
 }
@@ -300,6 +315,16 @@ img{
     height:532px;
     margin-left: 150px;
     margin-top:100px;
+    .section-CL{
+        display:inline;
+        img{
+            width: 594px;
+             height: 520px;
+        }
+    }
+    .section-CR{
+        float:right;
+    }
 }
 .section-CL img:hover{
     z-index: 50;
@@ -321,8 +346,15 @@ img{
         width:1205px;
         height:534px;
         margin-left:150px;
+        h2{
+            padding:35px 0;
         img{
             display:block;
+            width: 20px;
+            height: 18px; 
+            margin-top:-33px; 
+            margin-left:98px;
+        }
         }
     }
 }
@@ -358,11 +390,18 @@ img{
         width:1205px;
         height:534px;
         margin-left:150px;
+        img{
+            width: 20px;
+            height: 18px; 
+            margin-top:-33px;
+        }
     }
 }
 .news-B{
     width:604px;
     height:152px;
+    margin:-524px 0 10px 600px;
+    padding-top: 13px;
 }
 .news-B:hover{
     transform: scale(1.01);
@@ -372,16 +411,38 @@ img{
 .news-BB{
     width:177px;
     height:135px;
+    padding-top:10px;
+    border-right:1px solid #ebebeb;
+    h3{
+        text-align: center;
+        padding-top:50px
+    }
+    h5{
+        text-align: center;
+         padding-top:5px;
+         color: #798187;
+    }
 }
 .news-BA{
     float:right;
     width:400px;
     height:135px;
     margin-top: -140px;
+    padding-top:10px;
+    h3{
+        text-align: center;
+        padding-top:50px
+    }
+    h5{
+        text-align: center;
+         padding-top:5px;
+         color: #798187;
+    }
 }
 .news-C{
     width:604px;
     height:166px; 
+    margin-left: 600px;margin-bottom:10px;
 }
 .news-C:hover{
     transform: scale(1.01);
@@ -391,6 +452,7 @@ img{
 .news-D{
     width:604px;
     height:166px;
+    margin-left:600px;margin-bottom:20px;
 }
 .news-D:hover{
     transform: scale(1.01);
@@ -410,7 +472,7 @@ img{
         
        .footer_top{
             width: 256px;
-           
+            
         }
     }
 }

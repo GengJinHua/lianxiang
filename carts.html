@@ -34,7 +34,7 @@
         <div class="center-D">
             <img src="img/img.png" alt="">
             <span>您的购物车暂无商品，您可以</span>
-            <input type="button" value="选购商品">
+            <input type="button" value="选购商品" id="ct">
         </div>
         <div class="center-E">
             <span style="color: red;">|</span>
@@ -154,14 +154,17 @@
     </div>
     <script src="src/js/jquery-1.12.4.min.js"></script>
     <script src="src/js/bootstrap.min.js"></script>
-    <!-- <script>
+    <script>
         $('#fh').on('click',()=>{
             location.href = 'index.html';
             })
             
             $('#dl').on('click',()=>{
-           location.href = 'login.html';
-})
-    </script>  -->
+           location.href = 'login.html';      
+           })
+           $('#ct').on('click',()=>{
+            location.href = 'particulars.html';
+            })
+    </script> 
 </body>
 </html>
