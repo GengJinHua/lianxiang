@@ -58,22 +58,34 @@
 <!-- main -->
         <div class="main" >
         <div class="mainCon-A">
-            <img src="img/113.jpg" alt="">
-            <div>
-                <img src="img/left.png"id="an">
-                <img src="img/113.jpg" id="fim">
-                <img src="img/114.jpg">
-                <img src="img/115.jpg">
-                <img src="img/116.jpg">
-                <img src="img/117.jpg">
-                <img src="img/right.png"id="af">
+            <ul id="top">
+                <!-- <div id="left"></div>
+				<div id="right"></div> -->
+                <li style="z-index: 1 ";>
+                <img src="img/113.jpg" /></li>
+				<li><img src="img/114.jpg"/></li>
+				<li><img src="img/115.jpg"/></li>
+				<li><img src="img/116.jpg"/></li>
+				<li><img src="img/117.jpg"/></li>
+			</ul>
+            <!-- <img src="img/113.jpg" alt=""> -->
+            <div id="bottom">
+                <ul id="small_ul">
+                    <li><img src="img/left.png"id="btn_l" ></li>
+					<li><img src="img/113.jpg" id="xlb"style="margin-left: 40px; margin-top:230px;"></li>
+					<li><img src="img/114.jpg"id="xlb" style="margin-left:130px;margin-top: -86px;"></li>
+					<li><img src="img/115.jpg"id="xlb" style="margin-left:230px;margin-top: -86px;"></li>
+					<li><img src="img/116.jpg"id="xlb" style="margin-left:330px;margin-top: -86px;"></li>
+                    <li><img src="img/117.jpg"id="xlb" style="margin-left:430px;margin-top: -86px;"></li>
+                   <li> <img src="img/right.png"id="btn_r"></li>
+				</ul>
                 <div class="fs">
-                    <span>商品编号：F0EX007PCD</span>
+                    <!-- <span>商品编号：F0EX007PCD</span>
                     <img src="img/shoucang.png" style="margin-left: 280px;"><h6>收藏</h6>
-                    <img src="img/fenxiang.png"><h6>分享</h6>
+                    <img src="img/fenxiang.png"><h6>分享</h6> -->
                 </div>
             </div>
-            <h3>看了又看</h3>
+            <!-- <h3>看了又看</h3> -->
         </div>
         <div class="mainCon-B">
               <h3>AIO 520C-22ADA 21.5英寸一体台式机 黑色</h3>
@@ -235,16 +247,88 @@
 
 
 </div>
-<script src="src/js/jquery-1.12.4.min.js"></script>
-<script>
- $('#buy-A').on('click',()=>{
-                location.href = 'login.html';
-            })
-    $('#buy-B').on('click',()=>{
-        location.href = 'carts.html';
-        })
-    
+<script src="src/js/jquery-1.8.3.min.js"></script>
+<script src="src/js/sport.js"></script>
 
+
+<script>
+        window.onload = function(){
+				new Slider();
+			}
+			class Slider{
+				constructor(){
+					//获取元素
+					//1. 获取大盒子
+					this.big_box = $('.mainCon-A');
+					//2. 获取上半部
+					this.top = $('#top');
+				
+					//5. 获取左按钮
+					this.lt_btn = $('#btn_l');
+					//6. 获取右按钮
+					this.rt_btn = $('#btn_r');
+					//7. 获取所有的大图
+					this.big_pic = document.querySelectorAll('#top li');
+					//8. 获取下半部
+					this.bottom = $('#bottom');
+					//9. 获取小图ul
+					this.small_ul = $('#small_ul');
+					//10. 获取所有的小图
+					this.small_pic = document.querySelectorAll('#small_ul li');
+					// 11. 设置小图ul宽度
+					this.small_ul.style.width = this.small_pic.length * this.small_pic[0].offsetWidth + 'px';
+					//变量
+					//当前下标
+					this.index_cur = 0;
+					//z-index
+					this.z_index = 0;
+					//图片数量
+					this.num = this.big_pic.length +1;
+					//调用添加事件的方法
+					this.addEvent();
+					//调用轮播
+					this.slide();
+                }
+                slide(){
+					this.big_pic[this.index_cur].style.zIndex = ++ this.z_index;
+				}
+				addEvent(){
+					this.lt_btn.onclick = function(){
+						this.index_cur --;
+						if(this.index_cur === -1){
+							this.index_cur = this.num - 1;
+						}
+						//????
+						this.slide();
+					}.bind(this);
+					this.rt_btn.onclick = function(){
+						this.index_cur ++;
+						if(this.index_cur === this.num){
+							this.index_cur = 0;
+						}
+						this.slide();
+					}.bind(this);
+					let that = this;
+					 for(let i = 0;i < this.num;i ++){
+						this.small_pic[i].onclick = function(){
+							this.index_cur = i-1;
+							//???
+							this.slide();
+						}.bind(this);
+					}
+				}
+			}
+
+			function $(selector){
+				return document.querySelector(selector);
+            }
+            
+    //         $('#buy-A').on('click',()=>{
+    //             location.href = 'login.html';
+    //         })
+    // $('#buy-B').on('click',()=>{
+    //     location.href = 'carts.html';
+    //     })
 </script>
 </body>
 </html>
