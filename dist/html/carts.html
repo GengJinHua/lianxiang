@@ -27,13 +27,12 @@
             <a href="#"><span>商品</span></a>
             <a href="#"> <span>规格</span></a>
             <a href="#"><span>单价</span></a>
-            <a href="#"><span>数量</span></a>
-            <a href="#"><span>金额</span></a>
+            <a href="#"><span>数量</span></a>  
             <a href="#"><span>操作</span></a>
         </div>
-        <div class="center-D">
-            <img src="img/img.png" alt="">
-            <span>您的购物车暂无商品，您可以</span>
+        <div class="center-D" id="buy">
+            <img src="img/img.png" >
+            <span >您的购物车暂无商品，您可以</span>
             <input type="button" value="选购商品" id="ct">
         </div>
         <div class="center-E">
@@ -164,8 +163,10 @@
            location.href = 'login.html';      
            })
            $('#ct').on('click',()=>{
+            buy.style = 'visibility:hidden;';
             location.href = 'particulars.html';
             })
+           
     </script> 
 </body>
 </html>

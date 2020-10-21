@@ -21,8 +21,8 @@
             <li style="color: red;">下载app<li>
     </ul>
       <div class="headerCon-A" style="float: right;margin-right: 100px;" >
-                   <a href="#"  style="margin-right:6px;color:black;" ><span>登录</span></a> |
-                   <a href="#" style="margin-right:23px;color:black;"><span>注册</span></a> 
+                   <a href="#"  style="margin-right:6px;color:black;" id="dl" ><span>登录</span></a> |
+                   <a href="#" style="margin-right:23px;color:black;" id="zc"><span>注册</span></a> 
                    <img src="img/77.png" alt="">
                 </div>
     </div>
@@ -73,19 +73,19 @@
                 <ul id="small_ul">
                     <li><img src="img/left.png"id="btn_l" ></li>
 					<li><img src="img/113.jpg" id="xlb"style="margin-left: 40px; margin-top:230px;"></li>
-					<li><img src="img/114.jpg"id="xlb" style="margin-left:130px;margin-top: -86px;"></li>
-					<li><img src="img/115.jpg"id="xlb" style="margin-left:230px;margin-top: -86px;"></li>
-					<li><img src="img/116.jpg"id="xlb" style="margin-left:330px;margin-top: -86px;"></li>
-                    <li><img src="img/117.jpg"id="xlb" style="margin-left:430px;margin-top: -86px;"></li>
+					<li><img src="img/114.jpg"id="xlb" ></li>
+					<li><img src="img/115.jpg"id="xlb" ></li>
+					<li><img src="img/116.jpg"id="xlb" ></li>
+                    <li><img src="img/117.jpg"id="xlb"></li>
                    <li> <img src="img/right.png"id="btn_r"></li>
 				</ul>
                 <div class="fs">
-                    <!-- <span>商品编号：F0EX007PCD</span>
+                    <span>商品编号：F0EX007PCD</span>
                     <img src="img/shoucang.png" style="margin-left: 280px;"><h6>收藏</h6>
-                    <img src="img/fenxiang.png"><h6>分享</h6> -->
+                    <img src="img/fenxiang.png"><h6>分享</h6> 
                 </div>
             </div>
-            <!-- <h3>看了又看</h3> -->
+            <h3>看了又看</h3>
         </div>
         <div class="mainCon-B">
               <h3>AIO 520C-22ADA 21.5英寸一体台式机 黑色</h3>
@@ -112,9 +112,10 @@
                    <div >高价回收，急速到账换新机</div>
             </div>
               <span style="margin-left:38px;">购买数量</span> 
+
               <div id="buy">
-                  <input type="button" value="立即购买" id="buy-A">
-                  <input type="button" value="加入购物车" id="buy-B">
+                  <input type="button" value="立即购买" id="buyA">
+                  <input type="button" value="加入购物车" id="buyB">
                   <br>
                   <span>使用 <a href="#">联想智选APP</a>下单，享受更多优惠 </span>
               </div>
@@ -258,11 +259,12 @@
 			class Slider{
 				constructor(){
 					//获取元素
+                    this.buyA = $('#buyA');
+                    this.buyB = $('#buyB');
 					//1. 获取大盒子
 					this.big_box = $('.mainCon-A');
 					//2. 获取上半部
 					this.top = $('#top');
-				
 					//5. 获取左按钮
 					this.lt_btn = $('#btn_l');
 					//6. 获取右按钮
@@ -298,7 +300,7 @@
 						if(this.index_cur === -1){
 							this.index_cur = this.num - 1;
 						}
-						//????
+			
 						this.slide();
 					}.bind(this);
 					this.rt_btn.onclick = function(){
@@ -323,6 +325,19 @@
 				return document.querySelector(selector);
             }
             
+
+            dl.onclick=function(){
+                location.href='login.html';
+            }
+            zc.onclick=function(){
+                location.href='register.html'; 
+            }
+            buyA.onclick=function(){
+                location.href='login.html';
+            }
+            buyB.onclick=function(){
+                location.href='carts.html';
+            }
     //         $('#buy-A').on('click',()=>{
     //             location.href = 'login.html';
     //         })
